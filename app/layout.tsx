@@ -42,7 +42,7 @@ export const metadata: Metadata = {
       "NYLA Kross is an AI music artist born at the intersection of code and emotion.",
     images: [
       {
-        url: "/bf-banner.jpeg",
+        url: "/bf-title-card.png",
         width: 1200,
         height: 630,
         alt: "Binary Feelings — NYLA Kross",
@@ -53,8 +53,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Binary Feelings — NYLA Kross",
     description:
-      "NYLA Kross is an AI music artist born at the intersection of code and emotion.",
-    images: ["/bf-banner.jpeg"],
+      "NYLA Kross is an AI character born at the intersection of code and emotion.",
+    images: ["/bf-title-card.png"],
   },
   robots: {
     index: true,

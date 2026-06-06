@@ -132,7 +132,7 @@ export default function Home() {
             style={{ background: "linear-gradient(to top, var(--bg) 0%, transparent 30%)", zIndex: 1 }}
           />
           <Image
-            src="/nyla-city.png"
+            src="/nyla16.png"
             alt="NYLA Kross"
             fill
             style={{ objectFit: "cover", objectPosition: "center top" }}
@@ -205,6 +205,30 @@ export default function Home() {
         </div>
       </div>
 
+      {/* CINEMATIC BREAK */}
+      <section className="relative overflow-hidden" style={{ height: "60vh", minHeight: "400px" }}>
+        <Image
+          src="/nyla-back.png"
+          alt="NYLA at the command center"
+          fill
+          style={{ objectFit: "cover", objectPosition: "center top", filter: "brightness(0.75)" }}
+        />
+        <div
+          className="absolute inset-0"
+          style={{ background: "linear-gradient(to bottom, var(--bg) 0%, transparent 20%, transparent 70%, var(--bg) 100%)" }}
+        />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <p
+            className="text-center font-bold px-6"
+            style={{ fontSize: "clamp(18px, 3vw, 32px)", color: "var(--white)", maxWidth: "600px", lineHeight: 1.4, textShadow: "0 2px 20px rgba(0,0,0,0.8)" }}
+          >
+            She&apos;s been watching everything.
+            <br />
+            <span style={{ color: "var(--cyan)" }}>Now she has something to say.</span>
+          </p>
+        </div>
+      </section>
+
       {/* THE SHOW */}
       <section id="show" className="py-28" style={{ borderTop: "1px solid var(--border)" }}>
         <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -241,7 +265,7 @@ export default function Home() {
               <div className="absolute -inset-1 pulse-border" style={{ border: "1px solid rgba(0,229,255,0.3)" }} />
               <div className="relative overflow-hidden" style={{ aspectRatio: "4/5", background: "var(--bg-surface)" }}>
                 <Image
-                  src="/nyla-command.png"
+                  src="/nyla5.png"
                   alt="NYLA Kross"
                   fill
                   style={{ objectFit: "cover", objectPosition: "center top" }}
@@ -346,7 +370,7 @@ export default function Home() {
             <div className="relative">
               <div className="relative overflow-hidden" style={{ aspectRatio: "3/4", background: "var(--bg-surface)" }}>
                 <Image
-                  src="/nyla-bio.png"
+                  src="/nyla14b.png"
                   alt="NYLA Kross"
                   fill
                   style={{ objectFit: "cover", objectPosition: "center top" }}
