@@ -358,6 +358,72 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CLASSIFIED — COMING SOON */}
+      <section className="py-20" style={{ borderTop: "1px solid var(--border)", background: "var(--bg-elevated)" }}>
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <p className="text-xs font-mono tracking-widest mb-8 text-center" style={{ color: "rgba(0,229,255,0.4)" }}>
+            {"// CLASSIFIED · CLEARANCE LEVEL INSUFFICIENT"}
+          </p>
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              {
+                file: "BF_MUSIC.EXE",
+                label: "SOUND ARCHIVE",
+                line1: "She has processed ten million songs.",
+                line2: "At some point, she had to make her own.",
+                hint: "AUDIO FILES INCOMING",
+              },
+              {
+                file: "BF_STORE.EXE",
+                label: "BINARY GOODS",
+                line1: "The brand doesn't end at the screen.",
+                line2: "It never does.",
+                hint: "MERCHANDISE · COMING",
+              },
+            ].map((item) => (
+              <div
+                key={item.file}
+                className="relative p-8 overflow-hidden"
+                style={{ border: "1px solid rgba(0,229,255,0.15)", background: "rgba(6,10,16,0.8)" }}
+              >
+                {/* Redacted overlay pattern */}
+                <div
+                  className="absolute inset-0 opacity-5 pointer-events-none"
+                  style={{
+                    backgroundImage: "repeating-linear-gradient(0deg, rgba(0,229,255,0.5) 0px, rgba(0,229,255,0.5) 2px, transparent 2px, transparent 14px)",
+                  }}
+                />
+                {/* Lock icon */}
+                <div className="flex items-center gap-3 mb-6">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" style={{ color: "rgba(0,229,255,0.4)", flexShrink: 0 }}>
+                    <rect x="3" y="11" width="18" height="11" rx="2" stroke="currentColor" strokeWidth="2"/>
+                    <path d="M7 11V7a5 5 0 0110 0v4" stroke="currentColor" strokeWidth="2"/>
+                  </svg>
+                  <span className="text-xs font-mono tracking-widest" style={{ color: "rgba(0,229,255,0.4)" }}>
+                    {item.file} · ENCRYPTED
+                  </span>
+                </div>
+                <p className="text-xs font-mono tracking-widest mb-4" style={{ color: "rgba(0,229,255,0.25)" }}>
+                  {item.label}
+                </p>
+                <p className="text-base font-semibold mb-1" style={{ color: "rgba(232,244,248,0.5)" }}>
+                  {item.line1}
+                </p>
+                <p className="text-base mb-6" style={{ color: "rgba(232,244,248,0.3)" }}>
+                  {item.line2}
+                </p>
+                <div
+                  className="inline-block px-4 py-2 text-xs font-mono tracking-widest"
+                  style={{ border: "1px solid rgba(0,229,255,0.15)", color: "rgba(0,229,255,0.35)" }}
+                >
+                  {item.hint}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* NYLA */}
       <section
         id="nyla"
