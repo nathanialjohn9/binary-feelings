@@ -236,7 +236,7 @@ export default function Home() {
               <div className="absolute -inset-1 pulse-border" style={{ border: "1px solid rgba(0,229,255,0.3)" }} />
               <div className="relative overflow-hidden" style={{ aspectRatio: "4/5", background: "var(--bg-surface)" }}>
                 <Image
-                  src="/nyla-command.jpg"
+                  src="/nyla-command.png"
                   alt="NYLA Kross — Command Center"
                   fill
                   style={{ objectFit: "cover", objectPosition: "center top" }}
