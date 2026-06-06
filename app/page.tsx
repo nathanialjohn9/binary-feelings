@@ -346,7 +346,7 @@ export default function Home() {
             <div className="relative">
               <div className="relative overflow-hidden" style={{ aspectRatio: "3/4", background: "var(--bg-surface)" }}>
                 <Image
-                  src="/nyla-portrait.png"
+                  src="/nyla-bio.png"
                   alt="NYLA Kross"
                   fill
                   style={{ objectFit: "cover", objectPosition: "center top" }}
