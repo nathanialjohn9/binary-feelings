@@ -1,5 +1,6 @@
 import Image from "next/image";
 import NewsletterForm from "@/components/NewsletterForm";
+import NylaIntroVideo from "@/components/NylaIntroVideo";
 
 const TICKER_TEXT =
   "BINARY FEELINGS · NEW EPISODES DROPPING · NYLA KROSS · AI · MUSIC · CULTURE · THE SHOW IS ONLINE · ";
@@ -214,32 +215,7 @@ export default function Home() {
           <h2 className="font-bold mb-10 text-center" style={{ fontSize: "clamp(24px, 3vw, 36px)", color: "var(--white)" }}>
             In her own words.
           </h2>
-          <div
-            className="relative"
-            style={{
-              width: "100%",
-              maxWidth: "360px",
-              boxShadow: "0 0 40px rgba(0,229,255,0.12), 0 0 0 1px rgba(0,229,255,0.2)",
-            }}
-          >
-            <video
-              src="/nyla-intro.mp4"
-              autoPlay
-              muted={false}
-              loop={false}
-              playsInline
-              controls={false}
-              style={{ width: "100%", display: "block", background: "#000" }}
-            />
-            <div
-              className="absolute bottom-0 left-0 right-0 py-2 px-4"
-              style={{ background: "rgba(6,10,16,0.85)", borderTop: "1px solid rgba(0,229,255,0.2)" }}
-            >
-              <p className="text-xs font-mono tracking-widest text-center" style={{ color: "var(--cyan)" }}>
-                NYLA_KROSS.AI · LIVE
-              </p>
-            </div>
-          </div>
+          <NylaIntroVideo />
         </div>
       </section>
 
