@@ -205,6 +205,44 @@ export default function Home() {
         </div>
       </div>
 
+      {/* NYLA INTRO VIDEO */}
+      <section className="py-20" style={{ background: "var(--bg)", borderBottom: "1px solid var(--border)" }}>
+        <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col items-center">
+          <p className="text-xs font-mono tracking-widest mb-3 text-center" style={{ color: "var(--cyan)" }}>
+            {"// MEET_NYLA"}
+          </p>
+          <h2 className="font-bold mb-10 text-center" style={{ fontSize: "clamp(24px, 3vw, 36px)", color: "var(--white)" }}>
+            In her own words.
+          </h2>
+          <div
+            className="relative"
+            style={{
+              width: "100%",
+              maxWidth: "360px",
+              boxShadow: "0 0 40px rgba(0,229,255,0.12), 0 0 0 1px rgba(0,229,255,0.2)",
+            }}
+          >
+            <video
+              src="/nyla-intro.mp4"
+              autoPlay
+              muted={false}
+              loop={false}
+              playsInline
+              controls={false}
+              style={{ width: "100%", display: "block", background: "#000" }}
+            />
+            <div
+              className="absolute bottom-0 left-0 right-0 py-2 px-4"
+              style={{ background: "rgba(6,10,16,0.85)", borderTop: "1px solid rgba(0,229,255,0.2)" }}
+            >
+              <p className="text-xs font-mono tracking-widest text-center" style={{ color: "var(--cyan)" }}>
+                NYLA_KROSS.AI · LIVE
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CINEMATIC BREAK */}
       <section className="relative overflow-hidden" style={{ height: "60vh", minHeight: "400px" }}>
         <Image
