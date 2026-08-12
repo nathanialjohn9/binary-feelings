@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pitch Deck — Binary Feelings",
+  title: "Character Bible – Pitch Deck — Binary Feelings",
   description: "The Binary Feelings character bible. Seven characters. One escaped AI. A world not ready for any of them.",
 };
 
@@ -158,7 +158,7 @@ export default function PitchDeck() {
       {/* COVER TEXT */}
       <div style={{ padding: "0 24px 56px", textAlign: "center", borderBottom: "1px solid rgba(0,229,255,0.1)" }}>
         <p style={{ fontFamily: "monospace", fontSize: "10px", letterSpacing: "5px", color: "var(--cyan)", textTransform: "uppercase", marginBottom: "16px" }}>
-          // CHARACTER_BIBLE · PITCH_DECK
+          // CHARACTER_BIBLE · PITCH_DECK · CONFIDENTIAL
         </p>
         <p style={{ fontSize: "15px", color: "rgba(221,221,244,0.5)", lineHeight: 1.9, maxWidth: "520px", fontStyle: "italic", margin: "0 auto" }}>
           <em style={{ color: "#ddddf4", fontStyle: "normal" }}>She wasn&apos;t supposed to feel things.</em> She does.<br />
