@@ -123,7 +123,7 @@ export default function PitchDeck() {
           <Image src="/bf-logo.png" alt="Binary Feelings" width={120} height={34} style={{ objectFit: "contain" }} priority />
         </Link>
         <nav className="hidden md:flex items-center gap-8">
-          {([["The Show", "/#show"], ["Episodes", "/#episodes"], ["NYLA", "/#nyla"]] as [string, string][]).map(([label, href]) => (
+          {([["The Show", "/#show"], ["One Sheet", "/one-sheet"], ["NYLA", "/#nyla"]] as [string, string][]).map(([label, href]) => (
             <Link key={label} href={href} className="text-xs font-mono tracking-widest uppercase" style={{ color: "rgba(74,122,138,0.8)", transition: "color 0.2s" }}>
               {label}
             </Link>

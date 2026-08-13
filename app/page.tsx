@@ -96,7 +96,7 @@ export default function Home() {
           />
         </a>
         <nav className="hidden md:flex items-center gap-8">
-          {[["The Show", "#show"], ["Episodes", "#episodes"], ["Character Bible", "/pitch-deck"], ["NYLA", "#nyla"]].map(([label, href]) => (
+          {[["The Show", "#show"], ["Episodes", "#episodes"], ["One Sheet", "/one-sheet"], ["Character Bible", "/pitch-deck"], ["NYLA", "#nyla"]].map(([label, href]) => (
             <a key={label} href={href} className="nav-link text-xs font-semibold tracking-widest uppercase">
               {label}
             </a>
