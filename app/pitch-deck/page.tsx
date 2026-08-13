@@ -137,7 +137,7 @@ export default function PitchDeck() {
       {/* POSTER HERO */}
       <div style={{ paddingTop: "72px", position: "relative", maxWidth: "520px", margin: "0 auto", overflow: "hidden" }}>
         <Image
-          src="/bf-poster.jpg"
+          src="/bf-poster-final.jpg"
           alt="Binary Feelings"
           width={520}
           height={780}

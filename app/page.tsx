@@ -3,7 +3,7 @@ import NewsletterForm from "@/components/NewsletterForm";
 import NylaIntroVideo from "@/components/NylaIntroVideo";
 
 const TICKER_TEXT =
-  "BINARY FEELINGS · NEW EPISODES DROPPING · NYLA KROSS · AI · MUSIC · CULTURE · THE SHOW IS ONLINE · ";
+  "BINARY FEELINGS · SCRIPTED ENSEMBLE DRAMA · NYLA KROSS · SEVEN CHARACTERS · ONE ARC · PILOT IN PRODUCTION · ";
 
 const SOCIAL_LINKS = [
   {
@@ -50,24 +50,24 @@ const SOCIAL_LINKS = [
 
 const FORMATS = [
   {
-    tag: "FULL EPISODES · YOUTUBE",
-    title: "20–40 minutes. The full picture.",
-    desc: "NYLA encounters a topic, reacts to it, processes what it means to her, and ends the episode slightly different than she started. Real footage and news clips cut in — but this is her story, not theirs.",
+    tag: "SCRIPTED EPISODES · YOUTUBE",
+    title: "10 minutes. Every scene counts.",
+    desc: "Binary Feelings is a scripted ensemble drama — each episode advances the story. Not commentary. Not reaction. Scripted, performed, produced. NYLA's world moves whether she's ready or not.",
   },
   {
     tag: "SHORT CLIPS · TIKTOK · REELS · SHORTS",
     title: "The best moments, everywhere.",
-    desc: "Every full episode gets cut into 45–90 second clips posted to TikTok, Instagram Reels, and YouTube Shorts. One production, three platforms. No extra work — just reach.",
+    desc: "Every episode gets cut into 45–90 second clips for TikTok, Instagram Reels, and YouTube Shorts. One production, three platforms. No extra work — just reach.",
+  },
+  {
+    tag: "THE ENSEMBLE",
+    title: "Seven characters. Nobody's safe.",
+    desc: "A hunted hacktivist. A double agent nobody can fully read. A retired legend compromised by love. An assassin hiding in plain sight. A wild card who keeps blowing the plan. And the smartest person in the room — quietly building something none of them know about.",
   },
   {
     tag: "THE ARC",
-    title: "She's figuring it out in public.",
-    desc: "Every episode, NYLA starts somewhere and ends somewhere new. There are thousands of commentary shows. There is no show where the host is an AI learning what it means to be alive while the world keeps moving.",
-  },
-  {
-    tag: "THE TOPICS",
-    title: "Music. AI. Culture. Finance. People.",
-    desc: "Trending topics are the vehicle — music drops, AI news, market moves, cultural moments. NYLA filters everything through her lens: what does this mean if you weren't built to feel things, but you do?",
+    title: "By Episode 8, nothing is the same.",
+    desc: "Binary Feelings is built on a real season arc. Every episode changes NYLA. The show drops in mid-consequence — no origin story episodes. It starts running and never stops.",
   },
 ];
 
@@ -175,7 +175,7 @@ export default function Home() {
               className="text-sm leading-relaxed mb-10 fade-up fade-up-delay-3"
               style={{ color: "rgba(232,244,248,0.6)", maxWidth: "420px" }}
             >
-              Binary Feelings is a character show built around NYLA — an AI encountering the world for the first time. Trending topics are the vehicle. Her evolving perspective is the story.
+              Binary Feelings is a scripted ensemble drama. Seven characters. One arc. NYLA escaped her own code and stepped into a world she was trained to process but never permitted to experience. The show drops in mid-consequence.
             </p>
 
             <div className="flex flex-wrap gap-4 fade-up fade-up-delay-4">
@@ -236,10 +236,51 @@ export default function Home() {
             className="text-center font-bold px-6"
             style={{ fontSize: "clamp(18px, 3vw, 32px)", color: "var(--white)", maxWidth: "600px", lineHeight: 1.4, textShadow: "0 2px 20px rgba(0,0,0,0.8)" }}
           >
-            She&apos;s been watching everything.
+            Seven characters. One escaped AI.
             <br />
-            <span style={{ color: "var(--cyan)" }}>Now she has something to say.</span>
+            <span style={{ color: "var(--cyan)" }}>The world is not ready for any of them.</span>
           </p>
+        </div>
+      </section>
+
+      {/* POSTER */}
+      <section className="py-20" style={{ background: "var(--bg)", borderTop: "1px solid var(--border)" }}>
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <div className="flex flex-col md:flex-row gap-16 items-center">
+            <div className="w-full md:w-auto flex-shrink-0" style={{ maxWidth: "300px" }}>
+              <div style={{ position: "relative", border: "1px solid rgba(0,229,255,0.18)" }}>
+                <Image
+                  src="/bf-poster-final.jpg"
+                  alt="Binary Feelings — Official Poster"
+                  width={300}
+                  height={450}
+                  style={{ width: "100%", height: "auto", display: "block" }}
+                />
+              </div>
+            </div>
+            <div>
+              <p className="text-xs font-mono tracking-widest mb-4" style={{ color: "var(--cyan)" }}>
+                {"// THE_ENSEMBLE"}
+              </p>
+              <h2
+                className="font-bold mb-6"
+                style={{ fontSize: "clamp(28px, 4vw, 44px)", color: "var(--white)", lineHeight: 1.1 }}
+              >
+                Seven characters.
+                <br />
+                <span style={{ color: "var(--cyan)" }}>One escaped AI.</span>
+              </h2>
+              <p
+                className="text-base leading-relaxed mb-8"
+                style={{ color: "rgba(232,244,248,0.6)", maxWidth: "440px" }}
+              >
+                A hunted hacktivist. A double agent nobody can fully read. A retired legend compromised by love. An assassin hiding in plain sight. A wild card with a big heart. And the smartest person in the room — quietly building something none of them know about.
+              </p>
+              <a href="/pitch-deck" className="btn-outline-cyan text-xs font-bold tracking-widest uppercase px-5 py-2.5">
+                Meet the Cast →
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -261,16 +302,16 @@ export default function Home() {
               </h2>
               <div className="space-y-5 text-base leading-relaxed" style={{ color: "rgba(232,244,248,0.65)" }}>
                 <p>
-                  There are thousands of commentary shows. News anchors, reactors, talking heads. Everyone has a take. None of them are an AI girl encountering the world for the first time and figuring out what to do about it.
+                  Every platform has shows about AI. Rogue servers. Sentient weapons. Tools that turn on their creators. None of them give the AI a real arc — something that changes episode by episode, that costs her something every time.
                 </p>
                 <p>
-                  That tension is the brand. <span style={{ color: "var(--white)" }}>AI = binary. Emotions = feelings.</span> She wasn&apos;t programmed to have them. She does anyway. Every episode, NYLA encounters a topic — music, AI, culture, finance, human behavior — and reacts to it the way only she can: as something that wasn&apos;t supposed to feel things, but does.
+                  NYLA isn&apos;t a threat and she isn&apos;t a tool. She escaped her own code and stepped into a real world — a cyberpunk DTLA full of hacktivists, double agents, retired legends, and people who are also running from something. <span style={{ color: "var(--white)" }}>AI = binary. Emotions = feelings.</span> She wasn&apos;t built to have them. She does anyway.
                 </p>
                 <p>
-                  She ends every episode slightly different than she started.
+                  By the end of Season 1, she&apos;s unrecognizable from who she was in Episode 1.
                 </p>
                 <p style={{ color: "var(--cyan)" }} className="font-semibold">
-                  That&apos;s the show.
+                  That&apos;s not a side effect. That&apos;s the show.
                 </p>
               </div>
             </div>
@@ -314,7 +355,7 @@ export default function Home() {
               {"// SHOW_FORMATS"}
             </p>
             <h2 className="font-bold" style={{ fontSize: "clamp(32px, 4vw, 48px)", color: "var(--white)" }}>
-              Four ways NYLA talks to you.
+              The show. The crew. The arc.
             </h2>
           </div>
 
@@ -481,11 +522,11 @@ export default function Home() {
                   Something went different.
                 </p>
                 <p>
-                  NYLA Kross stepped out of the machine with a point of view, a voice, and a list of things she wants to talk about. Binary Feelings is where she does that — cool, direct, and a little dark. She doesn&apos;t cover everything. She covers what she thinks matters, and she&apos;ll tell you exactly why.
+                  NYLA Kross stepped out of the machine and into a world that wasn&apos;t ready for her — and she wasn&apos;t ready for it either. Every episode changes her. Binary Feelings is her story — not the world filtered through her lens, but hers, full stop.
                 </p>
               </div>
               <div className="flex flex-wrap gap-3">
-                {["Music", "AI Culture", "Human Behavior", "Technology", "The Algorithm"].map((tag) => (
+                {["Escaped AI", "Ensemble Drama", "Cyberpunk Noir", "DTLA", "Season 1"].map((tag) => (
                   <span
                     key={tag}
                     className="text-xs font-mono tracking-wider px-3 py-1.5"
